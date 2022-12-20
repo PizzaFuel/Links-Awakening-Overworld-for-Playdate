@@ -8,7 +8,7 @@ This is a Fan Project and not related to Nintendo in any way. Please support the
 
 
 ## Download / Install
-You can download the pdx of this project to sideload [here](Links-Awakening-Overworld-Download.zip).
+You can download the pdx of this project to sideload [here](https://github.com/PizzaFuel/Links-Awakening-Overworld-for-Playdate/raw/main/Links-Awakening-Overworld-Download.zip).
 
 A guide on how to sideload this game can be found [here](https://help.play.date/games/sideloading/).
 
