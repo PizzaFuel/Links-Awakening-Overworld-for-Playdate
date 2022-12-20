@@ -1,0 +1,8 @@
+name=Link's Awakening Overworld (DEMO) for Playdate 
+author=PizzaFuel @PizzaFuelDev
+description=Take a walk around the overworld from Link's Awakening on GameBoy
+bundleID=com.pizzafuel.linksoverworld
+version=1.0
+buildNumber=1
+imagePath=images/cards
+contentWarning=This is a Fan Project and not related to Nintendo in any way. Please support the official release!
