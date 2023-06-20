@@ -15,7 +15,7 @@ function OverworldPlayer:init(scene)
     self.Scene = scene
     self.CurrentSprite = AnimatedSprite.new(self.Scene.Images.Player_Walk_Down)
     self.CurrentSprite:moveTo(self.Scene.DefaultPlayerX, self.Scene.DefaultPlayerY)
-    self.CurrentSprite:addState('idle',1,3,{ tickStep = 15 })
+    self.CurrentSprite:addState('idle',1,2,{ tickStep = 15 })
     self.CurrentSprite:setCollideRect(5,20,22,12)
     self.CurrentSprite:playAnimation()
 end
@@ -29,12 +29,8 @@ function OverworldPlayer:update()
     end
 
     -- Calculates how far the player will move
-    moveDistance = self.Scene.ElapsedTime * 90
-    if moveDistance % 2 == 0 then
-        --distance is divisible by 2
-      else
-        moveDistance = 2
-      end
+    -- moveDistance = self.Scene.ElapsedTime * 100
+    moveDistance = 2
     if playdate.buttonIsPressed(playdate.kButtonB) then
         moveDistance *= 2 end
 
@@ -78,7 +74,7 @@ function OverworldPlayer:changeDirection(direction)
         self.CurrentSprite = AnimatedSprite.new(newSprite)
         self.CurrentSprite:moveTo(x, y)
         self.CurrentSprite:setCollideRect(5,20,22,12)
-        self.CurrentSprite:addState('idle',1,3,{ tickStep = 15 })
+        self.CurrentSprite:addState('idle',1,2,{ tickStep = 15 })
         self.CurrentSprite:playAnimation()
     end
 end
