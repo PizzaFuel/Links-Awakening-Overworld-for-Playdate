@@ -30,6 +30,11 @@ function OverworldPlayer:update()
 
     -- Calculates how far the player will move
     moveDistance = self.Scene.ElapsedTime * 90
+    if moveDistance % 2 == 0 then
+        --distance is divisible by 2
+      else
+        moveDistance = 2
+      end
     if playdate.buttonIsPressed(playdate.kButtonB) then
         moveDistance *= 2 end
 
