@@ -9,7 +9,7 @@ class("OverworldImages",
     Player_Walk_Left = playdate.graphics.imagetable.new("images/assets/player/walk/left"),
     Player_Walk_Right = playdate.graphics.imagetable.new("images/assets/player/walk/right"),
     Player_Walk_Down = playdate.graphics.imagetable.new("images/assets/player/walk/down"),
-    Background = playdate.graphics.image.new("images/assets/map"):scaledImage(1)
+    Background = playdate.graphics.image.new("images/assets/map")
 }).extends()
 
 function OverworldImages:init()

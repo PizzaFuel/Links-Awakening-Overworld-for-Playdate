@@ -21,7 +21,7 @@ class("OverworldScene",
 function OverworldScene:init()
     self.Player = OverworldPlayer(self)
     self.Background = playdate.graphics.sprite.new(self.Images.Background)
-    self.Background:moveTo(2020, -511)
+    self.Background:moveTo(1946, -570)
     self.Background:setZIndex(-1)
     self.Background:add()
     self.Song = playdate.sound.sampleplayer.new("sounds/theme")
@@ -43,8 +43,10 @@ function OverworldScene:update()
 
     -- Moves camera using the difference in player positions.
     -- This code should be executed for every object, except for the player
+    dx = self.DefaultPlayerX - playerX
+    dy = self.DefaultPlayerY - playerY
     x, y = self.Background:getPosition()
-    self.Background:moveTo(x + self.DefaultPlayerX - playerX, y + self.DefaultPlayerY - playerY)
+    self.Background:moveTo(x + dx, y + dy)
 
     -- Update Screen
     playdate.graphics.sprite.update()

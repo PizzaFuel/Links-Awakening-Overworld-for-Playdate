@@ -9,7 +9,7 @@ class("SplashScreenScene",
 
 function SplashScreenScene:init()
     playdate.resetElapsedTime()
-    playdate.graphics.drawTextAligned("Link's Awakening Overworld Demo\n\nMade by @PizzaFuelDev\nUpdated by NickSr", 200, 100, kTextAlignment.center)
+    playdate.graphics.drawTextAligned("Link's Awakening Overworld Demo\n\nMade by @PizzaFuelDev\nUpdated by NickSr", 200, 80, kTextAlignment.center)
 end
 
 function SplashScreenScene:update()

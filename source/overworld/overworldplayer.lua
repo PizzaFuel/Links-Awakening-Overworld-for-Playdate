@@ -28,8 +28,7 @@ function OverworldPlayer:update()
         self.CurrentSprite:playAnimation()
     end
 
-    -- Calculates how far the player will move
-    -- moveDistance = self.Scene.ElapsedTime * 100
+    -- Calculates how far the player will move (has to be a multiple of 2 due to the dithering pattern used)
     moveDistance = 2
     if playdate.buttonIsPressed(playdate.kButtonB) then
         moveDistance *= 2 end

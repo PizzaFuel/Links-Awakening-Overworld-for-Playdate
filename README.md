@@ -41,4 +41,6 @@ ProfessorCreepyPasta on deviantart](https://www.deviantart.com/professorcreepypa
 ## Collaborations
 If you wanna continue developing this, then hit me up on [Twitter @PizzaFuelDev](https://twitter.com/PizzaFuelDev) or on the Playdate Squad Discord.
 
+Special thanks go out to NickSr for his incredible dithering work on this project!
+
 ![Game running on Playdate](demoimages/playdate.png)
